@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import * as search from '@/services/yandexSearch';
+// import * as search from '@/services/yandexSearch';
+import { geocode } from '@/api/client';
 
 export default function AddressAutocomplete({ value, onSelect }:{
     value: string; onSelect: (v: { address: string; coords: [number,number] })=>void
@@ -12,7 +13,7 @@ export default function AddressAutocomplete({ value, onSelect }:{
         let alive=true;
         (async()=>{
             if (!q) { setItems([]); return; }
-            const r = await search.geocode(q);
+            const r = await geocode(q);
             if (alive) setItems(r);
         })();
         return ()=>{alive=false};
