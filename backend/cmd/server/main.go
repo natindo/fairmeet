@@ -7,15 +7,15 @@ import (
 	"os/signal"
 	"syscall"
 
-	"fairmeet/internal/calc"
-	"fairmeet/internal/config"
-	"fairmeet/internal/httpapi"
-	"fairmeet/internal/log"
-	"fairmeet/internal/meeting"
-	
-	"fairmeet/internal/poi"
-	"fairmeet/internal/realtime"
-	"fairmeet/internal/repo"
+	"github.com/natindo/fairmeet/backend/internal/calc"
+	"github.com/natindo/fairmeet/backend/internal/config"
+	"github.com/natindo/fairmeet/backend/internal/httpapi"
+	"github.com/natindo/fairmeet/backend/internal/log"
+	"github.com/natindo/fairmeet/backend/internal/meeting"
+
+	"github.com/natindo/fairmeet/backend/internal/poi"
+	"github.com/natindo/fairmeet/backend/internal/realtime"
+	"github.com/natindo/fairmeet/backend/internal/repo"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"

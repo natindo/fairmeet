@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"fairmeet/internal/meeting"
-	"fairmeet/internal/realtime"
+	"github.com/natindo/fairmeet/backend/internal/meeting"
+	"github.com/natindo/fairmeet/backend/internal/realtime"
 
 	"github.com/go-chi/chi/v5"
 )

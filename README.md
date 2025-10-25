@@ -1,1 +1,1 @@
-![img.png](docs/img.png)
+![sticker.png](docs/sticker.png)

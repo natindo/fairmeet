@@ -1,3 +1,64 @@
+# ===== Go build artifacts =====
+bin/
+build/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# ===== Go modules =====
+vendor/
+go.work
+go.work.sum
+
+# ===== OS / Editor files =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# ===== Logs and temporary files =====
+*.log
+*.tmp
+*.swp
+*.swo
+
+# ===== Configs and environment =====
+.env
+.env.*
+*.local
+config/*.local.yaml
+config/*.dev.yaml
+
+# ===== Coverage / testing =====
+coverage.out
+coverage/
+*.coverprofile
+
+# ===== Docker / compose =====
+*.pid
+*.sock
+.docker/
+docker-compose.override.yml
+
+# ===== Generated files =====
+*.pb.go
+*.gen.go
+*.swagger.json
+*.swagger.yaml
+*.openapi.json
+*.openapi.yaml
+
+# ===== CI/CD cache or temp =====
+.cache/
+.tmp/
+.gitlab-ci-local/
+
 /tmp
 /out-tsc
 

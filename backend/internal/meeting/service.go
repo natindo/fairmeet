@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"time"
 
-	"fairmeet/internal/calc"
-	"fairmeet/internal/poi"
-	"fairmeet/internal/realtime"
+	"github.com/natindo/fairmeet/backend/internal/calc"
+	"github.com/natindo/fairmeet/backend/internal/poi"
+	"github.com/natindo/fairmeet/backend/internal/realtime"
 
 	"github.com/redis/go-redis/v9"
 	"github.com/rs/zerolog"
